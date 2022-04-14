@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:Janindu" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:Janindu" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:Janindu/master" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="520b87ee-9d0b-40af-91c6-b8e66157cb00" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Addcategory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/addcategory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/adinfo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/global.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/script.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/validation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="footer" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="ProjectId" id="26alRCy5Dt1qc6ZDVgVFcXwRT8H" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="false" id="Update" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/js" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/js" />
+      <recent name="$PROJECT_DIR$/css" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="520b87ee-9d0b-40af-91c6-b8e66157cb00" name="Default Changelist" comment="" />
+      <created>1647669567592</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1647669567592</updated>
+      <workItem from="1647669568624" duration="414000" />
+      <workItem from="1647671069670" duration="3433000" />
+      <workItem from="1648026887674" duration="29000" />
+      <workItem from="1648182919249" duration="633000" />
+      <workItem from="1648964294910" duration="2991000" />
+      <workItem from="1649151095774" duration="26000" />
+      <workItem from="1649932092297" duration="1344000" />
+      <workItem from="1649934095119" duration="653000" />
+      <workItem from="1649938732350" duration="8578000" />
+    </task>
+    <task id="LOCAL-00001" summary="This Is the First Page">
+      <created>1647671347239</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1647671347239</updated>
+    </task>
+    <task id="LOCAL-00002" summary="This Is the First Page and Janindu">
+      <created>1647671928752</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1647671928752</updated>
+    </task>
+    <task id="LOCAL-00003" summary="This Is the First Page and Janindu">
+      <created>1647672621142</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1647672621142</updated>
+    </task>
+    <task id="LOCAL-00004" summary="This Is the First Page">
+      <created>1647673776938</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1647673776938</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Home page change - title">
+      <created>1648028604347</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1648028604347</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Admin home page (main page of admin)">
+      <created>1649938763936</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1649938763936</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="Janindu/master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <MESSAGE value="This Is the Admin Home page" />
+    <MESSAGE value="This Is the First Page and Janindu" />
+    <MESSAGE value="Admin page Add" />
+    <MESSAGE value="This Is the First Page" />
+    <MESSAGE value="Home page change - title" />
+    <MESSAGE value="Admin home page (main page of admin)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Admin home page (main page of admin)" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="586" y="51" width="800" height="684" key="#Deployment" timestamp="1648967540537">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="586" y="51" width="800" height="684" key="#Deployment/72.27.1848.1053@72.27.1848.1053" timestamp="1648967540537" />
+    <state x="535" y="101" width="912" height="576" key="CommitChangelistDialog2" timestamp="1649938763860">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="535" y="101" width="912" height="576" key="CommitChangelistDialog2/72.27.1848.1053@72.27.1848.1053" timestamp="1649938763860" />
+    <state x="779" y="311" width="424" height="491" key="FileChooserDialogImpl" timestamp="1649939386591">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="779" y="311" width="424" height="491" key="FileChooserDialogImpl/72.27.1848.1053@72.27.1848.1053" timestamp="1649939386591" />
+    <state x="252" y="117" width="1478" height="879" key="MergeDialog" timestamp="1648967277779">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="252" y="117" width="1478" height="879" key="MergeDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1648967277779" />
+    <state x="791" y="479" width="399" height="156" key="NewPhpFileDialog" timestamp="1649961083918">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="791" y="479" width="399" height="156" key="NewPhpFileDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1649961083918" />
+    <state x="591" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1649938771197">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="591" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/72.27.1848.1053@72.27.1848.1053" timestamp="1649938771197" />
+    <state x="721" y="247" width="539" height="619" key="git4idea.branch.GitSmartOperationDialog" timestamp="1648967245631">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="721" y="247" width="539" height="619" key="git4idea.branch.GitSmartOperationDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1648967245631" />
+    <state x="1013" y="259" width="672" height="678" key="search.everywhere.popup" timestamp="1649963068960">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="1013" y="259" width="672" height="678" key="search.everywhere.popup/72.27.1848.1053@72.27.1848.1053" timestamp="1649963068960" />
+  </component>
+</project>
