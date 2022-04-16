@@ -104,7 +104,7 @@
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="far fa-file-alt me-2"></i>Category</a>
                     <div class="dropdown-menu bg-transparent border-0">
-                        <a href="Addcategory.php" class="dropdown-item">Add Category</a>
+                        <a href="addcategory.php" class="dropdown-item">Add Category</a>
                         <a href="view.php" class="dropdown-item">Our Category</a>
 
                     </div>
@@ -210,66 +210,58 @@
 
         <!-- Sale & Revenue Start -->
         <div class="wrapper wrapper--w790">
-            <div class="card card-5">
-                <div class="card-heading">
-                    <h2 class="title">Add Category</h2>
-                </div>
-                <div class="card-body">
-                    <form method="POST" action="AddcategoryAction.php"  name="reg-form">
-
-                        <div class="form-row">
-                            <div class="name">Category Name</div>
-                            <div class="value">
-                                <div class="input-group">
-                                    <input class="input--style-5" type="text" name="categoryName" placeholder="Enter Category Name">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="name">Category Type</div>
-                            <div class="value">
-                                <div class="input-group">
-                                    <input class="input--style-5" type="txt" name="category_type">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-row">
-
-                            <div class="name">Description</div>
-                            <div class="value">
-                                <div class="input-group">
-
-                                    <textarea class="input--style-5" rows="5" cols="30" name="category_description"></textarea>
-
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="form-row">
-                            <div class="name">Add Category Photo</div>
-                        </div>
-                        <div id="drop_file_zone" ondrop="upload_file(event)" ondragover="return false">
-                            <div id="drag_upload_file">
-                                <p>Drop file here</p>
-                                <p>or</p>
-                                <p><input type="button" value="Select File" onclick="file_explorer();" /></p>
-                                <input type="file" id="selectfile" />
-                            </div>
-                        </div>
-                        <input type="hidden" name="uploaded_file" id="uploaded_file" />
-                        <div class="img-content"></div>
-
-
-                        <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
-                        <BR>
-
-                        <div>
-
-                            <button class="btn btn--radius-2 btn--red" type="submit">ADD CATEGORY</button>
-                        </div>
-                    </form>
-                </div>
+            <div class="table table-striped table-dark">
+                <h2 class="title">ALL Category</h2>
             </div>
+            <table class="table table-striped table-dark">
+                <thead>
+                <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Type</th>
+                    <th scope="col">Description</th>
+                    <th scope="col">Picture</th>
+                    <th scope="col">Action</th>
+                </tr>
+                </thead>
+                <tbody>
+                <?php
+
+                $query = "SELECT * FROM Category";
+
+                $result = $con->query($query);
+
+                if ($result->num_rows > 0) {
+                    // output data of each row
+                    while($row = $result->fetch_assoc()) {
+                        ?>
+                        <tr>
+                            <td><?php echo $row["idCategory"]?></td>
+                            <td><?php echo $row["CategoryName"]?></td>
+                            <td><?php echo $row["CategoryType"]?></td>
+                            <td><?php echo $row["CategoryDescription"]?></td>
+                            <td><img height="50" width="50" src="<?php  echo $row["CategoryPicture"]?>"/></td>
+                            <td><a href="addcategory.php"><button class="btn btn-warning" >Edit</button></a><button class="btn btn-danger">Delete</button></td>
+                        </tr>
+
+                        <?php
+
+
+
+
+                    }
+                } else {
+                    echo "0 results";
+                }
+                $con->close();
+
+
+
+
+                ?>
+
+                </tbody>
+            </table>
         </div>
 
 

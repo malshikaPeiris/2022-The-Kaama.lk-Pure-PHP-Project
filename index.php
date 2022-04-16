@@ -87,7 +87,7 @@
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="far fa-file-alt me-2"></i>Category</a>
                         <div class="dropdown-menu bg-transparent border-0">
                             <a href="addcategory.php" class="dropdown-item">Add Category</a>
-                            <a href="#" class="dropdown-item">Our Category</a>
+                            <a href="view.php" class="dropdown-item">Our Category</a>
 
                         </div>
                     </div>
