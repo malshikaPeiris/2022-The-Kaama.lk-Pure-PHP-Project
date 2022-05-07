@@ -125,9 +125,7 @@
             <a href="#" class="sidebar-toggler flex-shrink-0">
                 <i class="fa fa-bars"></i>
             </a>
-            <form class="d-none d-md-flex ms-4">
-                <input class="form-control border-0" type="search" placeholder="Search">
-            </form>
+
             <div class="navbar-nav align-items-center ms-auto">
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
@@ -211,9 +209,16 @@
         <!-- Sale & Revenue Start -->
         <div class="wrapper wrapper--w790">
             <div class="table table-striped table-dark">
-                <h2 class="title">ALL Category</h2>
+                <h2 class="title1">ALL Category</h2>
             </div>
+
+
+            <form class="d-none d-md-flex ms-4" method="post" action="view.php">
+                <input class="form-control border-0" type="search" placeholder="Search" name="search">
+                <button class="btn btn--radius-2 btn--red" type="submit">Search</button>
+            </form>
             <table class="table table-striped table-dark">
+
                 <thead>
                 <tr>
                     <th scope="col">ID</th>
@@ -229,11 +234,19 @@
 
                 $query = "SELECT * FROM Category";
 
+                if ($_POST['search']){
+
+                    $search = $_POST['search'];
+                    $query = $query . " where CategoryName LIKE '%{$search}%'";
+                }
+
                 $result = $con->query($query);
 
                 if ($result->num_rows > 0) {
                     // output data of each row
                     while($row = $result->fetch_assoc()) {
+                        $id = $row['idCategory'];
+
                         ?>
                         <tr>
                             <td><?php echo $row["idCategory"]?></td>
@@ -241,7 +254,10 @@
                             <td><?php echo $row["CategoryType"]?></td>
                             <td><?php echo $row["CategoryDescription"]?></td>
                             <td><img height="50" width="50" src="<?php  echo $row["CategoryPicture"]?>"/></td>
-                            <td><a href="addcategory.php"><button class="btn btn-warning" >Edit</button></a><button class="btn btn-danger">Delete</button></td>
+                            <td><a href="Editcategory.php?updateid=<?= $id ?>"><button class="btn btn-warning" >Edit</button></a>
+                                <a href="delete.php?deleteid=<?= $id ?>"> <button class="btn btn-danger">Delete</button></a>
+                                <a href="categoryview.php?viewid=<?= $id ?>"> <button class="btn btn-primary">View</button></a>
+                            </td>
                         </tr>
 
                         <?php
@@ -262,6 +278,7 @@
 
                 </tbody>
             </table>
+           <a href="report.php"> <button class="btn btn--radius-2 btn--red" type="button">Generate Report</button></a>
         </div>
 
 

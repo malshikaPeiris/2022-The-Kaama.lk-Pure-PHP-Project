@@ -212,16 +212,37 @@
         <div class="wrapper wrapper--w790">
             <div class="card card-5">
                 <div class="card-heading">
-                    <h2 class="title">Add Category</h2>
+                    <h2 class="title">EDIT Category</h2>
                 </div>
-                <div class="card-body">
-                    <form method="POST" action="AddcategoryAction.php"  name="reg-form">
 
+<?php
+    $id =$_GET['updateid'];
+    $query = "SELECT * FROM Category where idCategory = ".$id;
+
+    $result = mysqli_query($con,$query);
+    $row = mysqli_fetch_assoc($result);
+
+
+
+?>
+                <div class="card-body">
+
+
+                    <form method="POST" action="updatecategory.php"  name="reg-form">
+
+                        <div class="form-row">
+                            <div class="name">Category ID</div>
+                            <div class="value">
+                                <div class="input-group">
+                                    <input class="input--style-5" type="text" name="categoryid" value="<?php echo $row['idCategory']?>">
+                                </div>
+                            </div>
+                        </div>
                         <div class="form-row">
                             <div class="name">Category Name</div>
                             <div class="value">
                                 <div class="input-group">
-                                    <input class="input--style-5" type="text" name="categoryName" placeholder="Enter Category Name">
+                                    <input class="input--style-5" type="text" name="categoryName" value="<?php echo $row['CategoryName']?>">
                                 </div>
                             </div>
                         </div>
@@ -229,7 +250,7 @@
                             <div class="name">Category Type</div>
                             <div class="value">
                                 <div class="input-group">
-                                    <input class="input--style-5" type="txt" name="category_type">
+                                    <input class="input--style-5" type="txt" name="category_type" value="<?php echo $row["CategoryType"]?>">
                                 </div>
                             </div>
                         </div>
@@ -239,7 +260,7 @@
                             <div class="value">
                                 <div class="input-group">
 
-                                    <textarea class="input--style-5" rows="5" cols="30" name="category_description"></textarea>
+                                    <textarea class="input--style-5" rows="5" cols="30" name="category_description"><?php  echo $row["CategoryDescription"]?></textarea>
 
                                 </div>
                             </div>
@@ -257,7 +278,10 @@
                             </div>
                         </div>
                         <input type="hidden" name="uploaded_file" id="uploaded_file" />
-                        <div class="img-content"></div>
+                        <div class="img-content">
+                           <img src="<?php  echo $row["CategoryPicture"]?>"/>
+
+                        </div>
 
 
                         <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
@@ -265,7 +289,8 @@
 
                         <div>
 
-                            <button class="btn btn--radius-2 btn--red" type="submit">ADD CATEGORY</button>
+                            <a href="updatecategory.php?updateid='<?= $id ?>'"><button class="btn btn--radius-2 btn--red" >UPDATE CATEGORY</button></a>
+                            <button class="btn btn--radius-2 btn--blue" type="cancel">CANCEL</button>
                         </div>
                     </form>
                 </div>
@@ -282,7 +307,7 @@
                     </div>
                     <div class="col-12 col-sm-6 text-center text-sm-end">
                         <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                        Designed By <a href="https://htmlcodex.com">HTML Codex</a>
+                        Designed By &<a href="https://htmlcodex.com"></a>
                         </br>
                         Distributed By <a class="border-bottom" href="https://themewagon.com" target="_blank">Janindu_Gunasinghe</a>
                     </div>

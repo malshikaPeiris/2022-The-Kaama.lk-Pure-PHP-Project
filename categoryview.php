@@ -5,7 +5,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Add_category</title>
+    <title>View_category</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -212,16 +212,37 @@
         <div class="wrapper wrapper--w790">
             <div class="card card-5">
                 <div class="card-heading">
-                    <h2 class="title">Add Category</h2>
+                    <h2 class="title">Category Detail</h2>
                 </div>
-                <div class="card-body">
-                    <form method="POST" action="AddcategoryAction.php"  name="reg-form">
 
+                <?php
+                $id =$_GET['viewid'];
+                $query = "SELECT * FROM Category where idCategory = ".$id;
+
+                $result = mysqli_query($con,$query);
+                $row = mysqli_fetch_assoc($result);
+
+
+
+                ?>
+                <div class="card-body">
+
+
+                    <form name="reg-form">
+
+                        <div class="form-row">
+                            <div class="name">Category ID</div>
+                            <div class="value">
+                                <div class="input-group">
+                                    <input class="input--style-5" type="text" name="categoryid" value="<?php echo $row['idCategory']?>">
+                                </div>
+                            </div>
+                        </div>
                         <div class="form-row">
                             <div class="name">Category Name</div>
                             <div class="value">
                                 <div class="input-group">
-                                    <input class="input--style-5" type="text" name="categoryName" placeholder="Enter Category Name">
+                                    <input class="input--style-5" type="text" name="categoryName" value="<?php echo $row['CategoryName']?>">
                                 </div>
                             </div>
                         </div>
@@ -229,7 +250,7 @@
                             <div class="name">Category Type</div>
                             <div class="value">
                                 <div class="input-group">
-                                    <input class="input--style-5" type="txt" name="category_type">
+                                    <input class="input--style-5" type="txt" name="category_type" value="<?php echo $row["CategoryType"]?>">
                                 </div>
                             </div>
                         </div>
@@ -239,35 +260,34 @@
                             <div class="value">
                                 <div class="input-group">
 
-                                    <textarea class="input--style-5" rows="5" cols="30" name="category_description"></textarea>
+                                    <textarea class="input--style-5" rows="5" cols="30" name="category_description"><?php  echo $row["CategoryDescription"]?></textarea>
 
                                 </div>
                             </div>
                         </div>
 
                         <div class="form-row">
-                            <div class="name">Add Category Photo</div>
+                            <div class="name"> Category Photo</div>
                         </div>
-                        <div id="drop_file_zone" ondrop="upload_file(event)" ondragover="return false">
-                            <div id="drag_upload_file">
-                                <p>Drop file here</p>
-                                <p>or</p>
-                                <p><input type="button" value="Select File" onclick="file_explorer();" /></p>
-                                <input type="file" id="selectfile" />
-                            </div>
+
+
+                        <div class="img-content">
+                            <img src="<?php  echo $row["CategoryPicture"]?>"/>
+
                         </div>
-                        <input type="hidden" name="uploaded_file" id="uploaded_file" />
-                        <div class="img-content"></div>
 
 
                         <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
                         <BR>
 
-                        <div>
 
-                            <button class="btn btn--radius-2 btn--red" type="submit">ADD CATEGORY</button>
-                        </div>
                     </form>
+
+                    <div>
+
+
+                        <a href="view.php" ><button class="btn btn--radius-2 btn--blue" >CANCEL</button></a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -282,7 +302,7 @@
                     </div>
                     <div class="col-12 col-sm-6 text-center text-sm-end">
                         <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                        Designed By <a href="https://htmlcodex.com">HTML Codex</a>
+                        Designed By &<a href="https://htmlcodex.com"></a>
                         </br>
                         Distributed By <a class="border-bottom" href="https://themewagon.com" target="_blank">Janindu_Gunasinghe</a>
                     </div>

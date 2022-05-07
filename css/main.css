@@ -385,8 +385,8 @@ h6 {
    ========================================================================== */
 .btn {
   display: inline-block;
-  line-height: 50px;
-  padding: 0 50px;
+  line-height: 35px;
+  padding: 0 25px;
   -webkit-transition: all 0.4s ease;
   -o-transition: all 0.4s ease;
   -moz-transition: all 0.4s ease;
@@ -719,6 +719,13 @@ input {
    #TITLE
    ========================================================================== */
 .title {
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+  color: white;
+}
+.title1 {
   font-size: 24px;
   text-transform: uppercase;
   font-weight: 700;
