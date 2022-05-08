@@ -30,18 +30,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="520b87ee-9d0b-40af-91c6-b8e66157cb00" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Editcategory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/categoryview.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clientmain.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/delete.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reportfetchdata.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/updatecategory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addcategory.php" beforeDir="false" afterPath="$PROJECT_DIR$/addcategory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view.php" beforeDir="false" afterPath="$PROJECT_DIR$/view.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +45,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="AddCategory" />
+        <entry key="$PROJECT_DIR$" value="adminreport" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -77,7 +68,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/food_delivery" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php.debug" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -113,6 +104,7 @@
       <workItem from="1651472620810" duration="1758000" />
       <workItem from="1651643649326" duration="6701000" />
       <workItem from="1651939131422" duration="4210000" />
+      <workItem from="1651989714387" duration="3496000" />
     </task>
     <task id="LOCAL-00001" summary="This Is the First Page">
       <created>1647671347239</created>

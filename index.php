@@ -88,6 +88,18 @@
                         <div class="dropdown-menu bg-transparent border-0">
                             <a href="addcategory.php" class="dropdown-item">Add Category</a>
                             <a href="view.php" class="dropdown-item">Our Category</a>
+
+                            <a href="clientmain.php" class="dropdown-item">Client View</a>
+
+                        </div>
+                    </div>
+
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="far fa-file-alt me-2"></i>Products</a>
+                        <div class="dropdown-menu bg-transparent border-0">
+                            <a href="addcategory.php" class="dropdown-item">Add Products</a>
+                            <a href="view.php" class="dropdown-item">Our Prouducts</a>
+
                             <a href="clientmain.php" class="dropdown-item">Client View</a>
 
                         </div>
