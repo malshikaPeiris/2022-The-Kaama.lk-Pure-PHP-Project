@@ -58,7 +58,7 @@ while($row = mysqli_fetch_assoc($query))
     $sub_array[] = $row['CategoryName'];
     $sub_array[] = $row['CategoryType'];
     $sub_array[] = $row['CategoryDescription'];
-    $sub_array[] = $row['CategoryPicture'];
+    $sub_array[] = '<img style ="width : 80px;" src ="'.$row['CategoryPicture'].'"/>';
 
     $data[] = $sub_array;
 }
